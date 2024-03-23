@@ -13,6 +13,16 @@
 body {
     background: #003767;
 }
+body h1{
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
 
 .container {
     font-family: "Open Sans", sans-serif;
@@ -76,4 +86,41 @@ body {
 
 .buttons button:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        min-width: 200px;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(26, 63, 90);
+    }
+    .display-timer {
+        padding: 20px;
+        font-size: 6vw;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        
+    }
+    .buttons button {
+        width: 80%;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        height: 35px;
+        font-size: 25px;
+        margin-top: 10px;
+        font-family: 'roboto mono', monospace;
+        text-transform: uppercase;
+    }
+    body h1{
+        font-size: 30px;
+    }
+    
 }
